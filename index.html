@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management System</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Library Management System</h1>
+    <p>Organize. Discover. Request.</p>
+  </header>
+
+  <main class="container">
+
+    <!-- Book Display Section -->
+    <section>
+      <h2 class="section-title">Available Books</h2>
+      <div class="book-grid" id="bookGrid"></div>
+    </section>
+
+    <!-- Book Request Section -->
+    <section class="request-section">
+      <h2 class="section-title">Request a Book</h2>
+
+      <form id="requestForm" class="request-form">
+        <input type="text" id="title" placeholder="Book Title" required />
+        <input type="text" id="author" placeholder="Author Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Library Management System</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
